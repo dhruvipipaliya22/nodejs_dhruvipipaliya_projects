@@ -1,34 +1,34 @@
 import mongoose from "mongoose";
 
-const MovieSchema = new mongoose.Schema({
+const movieSchema = new mongoose.Schema({
     title:{
         type:String,
-        require:[true,"Movie title is required"],
+        required:[true , "Movie title is required"],
         trim:true
     },
     director:{
         type:String,
-        require:[true,"Movie director is required"],
+        required:[true, "Movie director is reqired"],
         trim:true
     },
     releaseYear:{
         type:Number,
-        require:[true,"Movie releaseYear is required"],
+        required:[true, "Movie releaseYear reqired"],
     },
     rating:{
         type:Number,
         default:0,
         min:0,
-        max:10
+        max:10,
     },
     intheaters:{
         type:Boolean,
         default:true
     },
-    thubnail:{
+    thumbnail:{
         type:String,
-        require:[true,"Thubnail images URL is required"]
+        required:[true,"Thumbnail images URL is required"]
     }
 },{timestamps:true});
 
-export const Movie = mongoose.model("Movie",MovieSchema);
+export const Movie=mongoose.model("Movie",movieSchema);

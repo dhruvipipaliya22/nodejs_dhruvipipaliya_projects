@@ -5,10 +5,10 @@ const router = express.Router();
 
 router.route('/')
 .post(createMovie)
-.get(getMovie);
+.get(getMovie)
 
 router.route('/:id')
 .put(updateMovie)
-.delete(deleteMovie);
+.delete(deleteMovie)
 
-export default router;
+export default router

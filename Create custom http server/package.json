@@ -1,0 +1,19 @@
+{
+  "name": "create-custom-server",
+  "version": "1.0.0",
+  "description": "Hello Nodejs !!!",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "index.js"
+  ],
+  "author": "dhruvi pipaliya",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
